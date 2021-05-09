@@ -46,9 +46,17 @@ h3 {
 	margin-bottom: 2rem;
 }
 
-ul {
-	list-style-type: none;
-	color:#7e7e8a;
+ol {
+	background: #00c77b;
+	padding: 20px;
+  }
+
+ol li {
+	color:#ffffff;
+	font-size: small;
+	font-variant: small-caps;
+	margin: 5px;
+	text-align: left;
 }
 
 
