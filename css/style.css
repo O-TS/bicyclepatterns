@@ -106,7 +106,7 @@ ul li {
 }
 
 .tm-textbox-wide {
-	max-width: 1024px;
+	max-width: 100%;
 	width: 100%;
 	padding: 50px;
 	overflow: auto;
