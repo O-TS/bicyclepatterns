@@ -309,17 +309,18 @@ ul li {
 }
 
 #map {
-		position:absolute;
-		top:0;
-		bottom:0;
-		right:0;
-		left:0;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
 }
 
 #map_837ddc8e266642d0a18b4751563b89e5 {
-	position: relative;
-	width: 100.0%;
-	height: 100.0%;
-	left: 0.0%;
-	top: 0.0%;
+	position: absolute;
+	
+	width: 50.0%;
+	height: 5.0%;
+	left: 42.0%;
+	top: 54.0%;
 }

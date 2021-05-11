@@ -30,6 +30,7 @@
         L_NO_TOUCH = false;
         L_DISABLE_3D = false;
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -42,9 +43,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
     
-    <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
@@ -74,6 +73,7 @@
                         <p>The cycling culture in Denmark is almost as old as the bicycle itself. Bikes were first introduced to the country in the 1880s and during the 1920s and 1930s, the bicycle became a symbol of equality and freedom. People of all social classes began biking side by side on their way to work, to a bar, or just the countryside on their days off.
                             As cars became more affordable, there was a period during the 50s and 60s, where the number of bicycle riders declined. A Strøget, the main shopping street in Copenhagen, became pedestrian only in 1962 and in the 70s, ‘Car Free Sundays’ were introduced in Copenhagen, and there were protests demanding that all of Copenhagen became car-free. 
                         </p>
+                        <br>
                         <img src="img/drLuBro.jpg" class="center" alt="Dronning Louises Bro">
                         <p>In our time, where the threat of global warming is ever-present, sustainable modes of transportation are at the forefront of solutions necessary to curb excess emissions.</p>
                         <p>Follow us on this jurney, where we will investigate the factors that affect this cycling culture in Copenhagen and how it bacame so polular, while answering the various questions that will come up along the way.<br>
@@ -113,7 +113,7 @@
             </section>
             
             <!-- Temporal patterns section-->
-            <section class="parallax-window tm-section tm-section-home" id="tempat" data-parallax="scroll" data-image-src="img/bg-011.jpg">
+            <section class="parallax-window tm-section tm-section-home" id="tempat" data-parallax="scroll" data-image-src="img/bg-01.jpg">
                 <div class="tm-page-content-width tm-padding-b">                
                     <div class="tm-textbox tm-white-bg">
                         <h2 class="tm-green-text tm-section-title">Temporal Patterns</h2>
@@ -126,35 +126,35 @@
                                 <li>Bicycle users' number has increased over time.</li>
                             </ul>
                         </p>
-                        <p>On the plot to the right, we can see that Monday-Friday have similar hourly patterns, with large peaks in the morning and afternoon. These patterns are not appearent in the weekends, which implies that these spikes originate from people traveling to work, school, etc. 
-                        One interesting observation is that on Friday afternoons, there is a slight change to the pattern, which indicates that people probably stay for a beer at the company's Friday bar!</p>
+                        <p>We began by investigating the hourly patterns. From the resulting plot which is shown bellow, it appears that on average for all locations, the two most traffic-heavy hours are from 08-09 and from 16-17. This fits well with our expectations and the general patterns in the Danish society, as lots of people go to work, school, instutitions, etc. during these hours.
+                        </p>
                     </div>
+                    <img src="/img/hourOfDay.jpg" class="center" alt="Hour of day plot">
                     <div class="tm-textbox-wide tm-white-bg">
                         <!-- Bokeh-->
                         <div class="bk-root" id="a2f53689-76a3-40db-aa3d-f4f3c92e6ef5" data-root-id="1835"></div><br>
-                        <p>In the Bokeh plot above, we see the average number of bicycles per hour of the day. There are three viewing options, by selecting from the RGB boxes in order to view the cyclists going towards the city, those going away from it and the total.
-                            Selecting just the 'Total', we see a similar pattern as in the previous plot. Things become more interesting, if we toggle either 'Away from city' or 'Towards city'. We then see similar patterns to the total distribution, which <b style="color: #0056c7;">was not what we expected!</b>
-                            For example, we saw that Dronnings Louises Bro had a quite salient pattern when inspecting a single direction. This could imply that <b style="color: #0056c7;"> direction</b> people primarily go (towards or away from the city), <b style="color: #0056c7;">is very dependent on the specific location</b>.
+                        <p>But where is everyone heading to? In the Bokeh plot above, we see the average number of bicycles per hour of the day. There are three viewing options, by selecting from the RGB boxes in order to view the cyclists going towards the city, those going away from it and the total. Selecting just the 'Total', we see a similar pattern as in the previous plot. Things become more interesting, if we toggle either 'Away from city' or 'Towards city'. We then see similar patterns to the total distribution, which <b style="color: #0056c7;">was not what we expected!</b>For example, we saw that Dronnings Louises Bro had a quite salient pattern when inspecting a single direction. This could imply that <b style="color: #0056c7;"> direction</b> people primarily go (towards or away from the city), <b style="color: #0056c7;">is very dependent on the specific location</b>.
+                        </p><br>
+
+                        <h3>Interactive Map</h3>
+                        <p style="width: 25em;">By pressing the play button on the interactive map to the right, we can view the direction of traffic on the bike lanes throughout the day. The color of the bubbles in each location shows whether the dominating <b>direction</b> is <b style="color: blue;">towards</b> or <b style="color: red;">away</b> from the center of Copenhagen.</p>
+                        <p style="width: 25em;">The slider is used to manually focus on the the specific time of interest, while at any point, by clicking on each location shows the selected street name.</p>
+                        <p style="width: 25em;">
+                        It is visible that our new hypothesis from inspecting the above interactive bar plot was true. Although the overall traffic around Copenhagen is not dominated by traffic either towards or away from the center - the traffic at each location is typically dominated in each directions at different locations during rush hour around Copenhagen!
                         </p>
+                        <!-- Folium Map -->
+                        <div class="folium-map" id="map_837ddc8e266642d0a18b4751563b89e5" ></div>
                     </div>
+                    <div class="tm-white-bg tm-content-box tm-content-box-right">
+                        <div class="tm-content-box-inner">
+                            <h3>Title</h3>
+                            <p>Our main dataset is bicycle data from various measuring points throughout the Copenhagen Metropolitan Area, between the years 2005 – 2014.
+                                The measurements seem to have been usually conducted mostly on the same streets each year. They started by testing a few streets and kept adding locations, until eventually they gradually stopped measuring them once they retrieved the necessary data. This observation is important when we are going to look into patterns on a yearly basis - we have to consider the number of conducted experiments that year and average upon that.</p>
+                        </div>     
                 </div>       
             </section>
 
-            <!-- Temporal Patterns (Part 2) -->
-            <section class="parallax-window tm-section tm-section-services" id="dataset" data-parallax="scroll" data-image-src="img/bg-01.jpg">
-                <div class="tm-page-content-width">
-                    <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
-                        <div class="tm-textbox-wide">
-                            <p></p>
-                            <p>👉 Get to see whether people are going towards or away from the city, using the interactive plot bellow.</p>
-                            <br><h3>ADD MAP HERE</h3>
-                            <div class="folium-map" id="map_837ddc8e266642d0a18b4751563b89e5" ></div>
-                        </div>                        
-                    </div>                    
-                </div>                
-            </section>
-
-            <!-- Yearly Patterns Gallery section-->
+            <!-- Yearly Patterns Gallery section -->
             <section class="parallax-window tm-section tm-section-gallery tm-flex" id="gallery" data-parallax="scroll" data-image-src="img/bg-01.jpg">
                 <div class="tm-page-content-width tm-flex-col tm-gallery-content">
                     <div class="tm-content-box-inner">
