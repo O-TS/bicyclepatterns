@@ -126,31 +126,37 @@
                                 <li>Bicycle users' number has increased over time.</li>
                             </ul>
                         </p>
-                        <p>We began by investigating the hourly patterns. From the resulting plot which is shown bellow, it appears that on average for all locations, the two most traffic-heavy hours are from 08-09 and from 16-17. This fits well with our expectations and the general patterns in the Danish society, as lots of people go to work, school, instutitions, etc. during these hours.
+
+                        <h3>Hourly patterns</h3>
+                        <p>We began by investigating the hourly patterns. From the resulting plot which is shown bellow, it appears that on average for all locations, the two most traffic-heavy hours are from 08-09 and from 16-17. This fits well with our expectations and the general patterns in the Danish society, as lots of people go to work, school instutitions, etc. during these hours.
                         </p>
                     </div>
-                    <img src="/img/hourOfDay.jpg" class="center" alt="Hour of day plot">
+                    <img src="/img/hourly.jpg" class="center" alt="Hourly plot">
                     <div class="tm-textbox-wide tm-white-bg">
                         <!-- Bokeh-->
                         <div class="bk-root" id="a2f53689-76a3-40db-aa3d-f4f3c92e6ef5" data-root-id="1835"></div><br>
                         <p>But where is everyone heading to? In the Bokeh plot above, we see the average number of bicycles per hour of the day. There are three viewing options, by selecting from the RGB boxes in order to view the cyclists going towards the city, those going away from it and the total. Selecting just the 'Total', we see a similar pattern as in the previous plot. Things become more interesting, if we toggle either 'Away from city' or 'Towards city'. We then see similar patterns to the total distribution, which <b style="color: #0056c7;">was not what we expected!</b>For example, we saw that Dronnings Louises Bro had a quite salient pattern when inspecting a single direction. This could imply that <b style="color: #0056c7;"> direction</b> people primarily go (towards or away from the city), <b style="color: #0056c7;">is very dependent on the specific location</b>.
                         </p><br>
 
-                        <h3>Interactive Map</h3>
                         <p style="width: 25em;">By pressing the play button on the interactive map to the right, we can view the direction of traffic on the bike lanes throughout the day. The color of the bubbles in each location shows whether the dominating <b>direction</b> is <b style="color: blue;">towards</b> or <b style="color: red;">away</b> from the center of Copenhagen.</p>
                         <p style="width: 25em;">The slider is used to manually focus on the the specific time of interest, while at any point, by clicking on each location shows the selected street name.</p>
                         <p style="width: 25em;">
                         It is visible that our new hypothesis from inspecting the above interactive bar plot was true. Although the overall traffic around Copenhagen is not dominated by traffic either towards or away from the center - the traffic at each location is typically dominated in each directions at different locations during rush hour around Copenhagen!
-                        </p>
+                        </p><br>
                         <!-- Folium Map -->
                         <div class="folium-map" id="map_837ddc8e266642d0a18b4751563b89e5" ></div>
-                    </div>
-                    <div class="tm-white-bg tm-content-box tm-content-box-right">
-                        <div class="tm-content-box-inner">
-                            <h3>Title</h3>
-                            <p>Our main dataset is bicycle data from various measuring points throughout the Copenhagen Metropolitan Area, between the years 2005 – 2014.
-                                The measurements seem to have been usually conducted mostly on the same streets each year. They started by testing a few streets and kept adding locations, until eventually they gradually stopped measuring them once they retrieved the necessary data. This observation is important when we are going to look into patterns on a yearly basis - we have to consider the number of conducted experiments that year and average upon that.</p>
-                        </div>     
+
+                        <h3>Weekly patterns</h3>
+                        <p>During the week though, the scene changes. By exploring the data we came to an obvious, yet fun fact. As seen bellow, Danes seem to bicycle more on some days compared to others based on the 13 measured roads. As expected during the week the patterns are pretty similar, but on Friday afternoons, things slightly change. From the change in the distribution, it looks like people either leave work earlier, or they choose to stay for a beer and socialize at the company's Friday bar!</p>
+                        <img src="/img/weekly.jpg" class="center" alt="Weekly plot"><br>
+
+                        <h3>Monthly patterns</h3>
+                        <p>Now, let's widen the time-perspective and look at the monthly and seasonal patterns. We want to address the question of whether the month or the different seasons, have an impact on how many people choose to use their bikes. In the next plot, it appears that the weeks in December in general have more passing cyclists than other winter months, except from week 51. But this also makes great sense since it is Christmas week, where it is expected that a lot of people travel for the hollidays, while schools, universities and several companies are closed. This might also explain why we also see a similar decrease in July (weeks 27-29) as these are common weeks for travelling abroad for the summer holidays (in the pre-Covid19 era). To conclude, it seems reasonable to hypothesise that there could be a connection to the weather conditions, which we will investigate in the next section. But before we do that, we should see the overall picture by observing the yearly patterns.</p>
+                        <img src="/img/monthly.jpg" class="center" alt="Monthly plot"><br>
+                        
+                        <h3>Yearly patterns</h3>
+                        <p>Text goes here.</p>
+                     </div>      
                 </div>       
             </section>
 
@@ -158,7 +164,6 @@
             <section class="parallax-window tm-section tm-section-gallery tm-flex" id="gallery" data-parallax="scroll" data-image-src="img/bg-01.jpg">
                 <div class="tm-page-content-width tm-flex-col tm-gallery-content">
                     <div class="tm-content-box-inner">
-                        <h2 class="tm-section-title">Yearly Patterns</h2>
                         <!-- Add filtered gallery, 3:2 images -->
                         <div class="iso-section">
                             <ul class="filter-wrapper clearfix">
@@ -204,8 +209,7 @@
                                 <div class="iso-box design col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">
                                     <a href="img/gallery/Vigerslev_Alle.png"><img src="img/gallery/Vigerslev_Alle.png" alt="Vigerslev_Allé" class="img-fluid"></a>
                                 </div>
-                            </div>
-                            <a href="#weather" class="tm-btn">Next</a>                             
+                            </div>                            
                         </div>
                     </div>
                 </div>                
