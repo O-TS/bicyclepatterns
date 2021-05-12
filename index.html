@@ -39,19 +39,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
+   
 
 </head>
 <body>  
@@ -128,10 +130,10 @@
                         </p>
 
                         <h3>Hourly patterns</h3>
-                        <p>We began by investigating the hourly patterns. From the resulting plot which is shown bellow, it appears that on average for all locations, the two most traffic-heavy hours are from 08-09 and from 16-17. This fits well with our expectations and the general patterns in the Danish society, as lots of people go to work, school instutitions, etc. during these hours.
-                        </p>
+                        <p>We began by investigating the hourly patterns. From the resulting plot which is shown bellow, it appears that on average for all locations, the two most traffic-heavy hours are from 08-09 and from 16-17.</p>
+                        <p>This fits well with our expectations and the general patterns in the Danish society, as lots of people go to work, school instutitions, etc. during these hours.</p>
                     </div>
-                    <img src="/img/hourly.jpg" class="center" alt="Hourly plot">
+                    
                     <div class="tm-textbox-wide tm-white-bg">
                         <!-- Bokeh-->
                         <div class="bk-root" id="a2f53689-76a3-40db-aa3d-f4f3c92e6ef5" data-root-id="1835"></div><br>
@@ -148,14 +150,12 @@
 
                         <h3>Weekly patterns</h3>
                         <p>During the week though, the scene changes. By exploring the data we came to an obvious, yet fun fact. As seen bellow, Danes seem to bicycle more on some days compared to others based on the 13 measured roads. As expected during the week the patterns are pretty similar, but on Friday afternoons, things slightly change. From the change in the distribution, it looks like people either leave work earlier, or they choose to stay for a beer and socialize at the company's Friday bar!</p>
-                        <img src="/img/weekly.jpg" class="center" alt="Weekly plot"><br>
+                        <br><img src="img/weekly.jpg" class="center" alt="Weekly plot"><br>
 
                         <h3>Monthly patterns</h3>
                         <p>Now, let's widen the time-perspective and look at the monthly and seasonal patterns. We want to address the question of whether the month or the different seasons, have an impact on how many people choose to use their bikes. In the next plot, it appears that the weeks in December in general have more passing cyclists than other winter months, except from week 51. But this also makes great sense since it is Christmas week, where it is expected that a lot of people travel for the hollidays, while schools, universities and several companies are closed. This might also explain why we also see a similar decrease in July (weeks 27-29) as these are common weeks for travelling abroad for the summer holidays (in the pre-Covid19 era). To conclude, it seems reasonable to hypothesise that there could be a connection to the weather conditions, which we will investigate in the next section. But before we do that, we should see the overall picture by observing the yearly patterns.</p>
-                        <img src="/img/monthly.jpg" class="center" alt="Monthly plot"><br>
+                        <br><img src="img/monthly.jpg" class="center" alt="Monthly plot"><br>
                         
-                        <h3>Yearly patterns</h3>
-                        <p>Text goes here.</p>
                      </div>      
                 </div>       
             </section>
@@ -163,13 +163,20 @@
             <!-- Yearly Patterns Gallery section -->
             <section class="parallax-window tm-section tm-section-gallery tm-flex" id="gallery" data-parallax="scroll" data-image-src="img/bg-01.jpg">
                 <div class="tm-page-content-width tm-flex-col tm-gallery-content">
-                    <div class="tm-content-box-inner">
-                        <!-- Add filtered gallery, 3:2 images -->
-                        <div class="iso-section">
-                            <ul class="filter-wrapper clearfix">
-                                <li><a href="#" data-filter="*" class="selected opc-main-bg">Show All</a></li>
-                                <li><a href="#" class="opc-main-bg" data-filter=".design">Super Bike-Lanes</a></li>
+                    <div class="tm-content-box-inner tm-textbox">
+                        <h3>Yearly patterns</h3>
+                        <p>Here, we had to be carefull when averaging over all locations, as not all of them are included every year, which then might cause in heavily biased results. For example, the interactive plot from Friday 00:00 until Saturday 04:00 indicated that some roads on average had a lot more activity on the bike lanes.</p>
+                        <p>In the gallery bellow, we can see two plots side by side for each of the locations. 
+                            <ul> 
+                                <li>On the left side, the plots show the years where measurements where recorded throughout the year (notice the "365 days" bar on the top).</li>
+                                <li>The years for which this is true are then compareable on the right side plots.</li>
                             </ul>
+                        </p>
+                        <p>We can conclude that the data indicates an increasing number of cyclists on these locations. However, these observations are based only on a few streets and the specified years. It would have been be more meaninfull to average across all the roads, as the biases from road work and over/under-represented seasons would to a larger extent be averaged out. Although it would be tempting to assume that this implies that people in Copenhagen have chosen to use their bikes more, we need to keep in mind that the population of Copenhagen has also increased over the years.
+                        </p>
+                        <!-- Add filtered gallery, 3:2 images -->
+                        <br>
+                                               
                         </div>
                         <div class="iso-box-section">
                             <div class="iso-box-wrapper col4-iso-box">
@@ -209,8 +216,7 @@
                                 <div class="iso-box design col-6 col-sm-4 col-md-4 col-lg-3 col-xl-3">
                                     <a href="img/gallery/Vigerslev_Alle.png"><img src="img/gallery/Vigerslev_Alle.png" alt="Vigerslev_Allé" class="img-fluid"></a>
                                 </div>
-                            </div>                            
-                        </div>
+                            </div>     
                     </div>
                 </div>                
             </section>
@@ -220,8 +226,8 @@
                 <div class="tm-page-content-width">
                     <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
                         <div class="tm-content-box-inner">
-                            <h2 class="tm-section-title tm-blue-text">Influence of Weather</h2>
-                            <p>Noah, go crazy with it :)</p>
+                            <h2 class="tm-green-text tm-section-title">Influence of Weather</h2>
+                            <p>Noah's part :)</p>
                             <p>Etiam sed diam hendrerit dolor posuere dignissim. Integer eget nunc consequat, posuere augue maximus, elementum metus. Suspendisse et hendrerit velit. Morbi consectetur nisi. And many more other interesting things.</p>
                             </div>
                         </div>                        
@@ -280,11 +286,9 @@
                         </form>  
                     </div>
                 </div>
-                <div class="tm-copyright-div">
-                    <p><a href="#home" class="tm-btn">Scroll back to top</a></p><br><br>
-                    <p class="tm-copyright-text">Copyright &copy; <span class="tm-current-year"> F2021</span> DTU | 02806 - Social Data Analysis and Visualization </p>
-                    
-                </div>                
+                <div class="tm-copyright-div">    
+                <p class="tm-copyright-text">Copyright &copy; <span class="tm-current-year">2021</span> DTU | 02806 - Social Data Analysis and Visualization</p>
+                </div>           
             </section>
         </div>
         
