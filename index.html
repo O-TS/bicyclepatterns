@@ -69,13 +69,13 @@
                             <!-- End of Vimeo frame-->  
                     </div>                    
                     <div class="tm-textbox tm-white-bg">
-                        <h2 class="tm-green-text tm-section-title">Background and Motivation</h2>
+                        <p>In our time, where the threat of global warming is ever-present, sustainable modes of transportation are at the forefront of solutions necessary to curb excess emissions. PUT THIS INTO SOME EYE-CATCHING MOTIVATION?</p>
+                        <h2 class="tm-green-text tm-section-title">Denmark and Bicycles</h2>
                         <p>The cycling culture in Denmark is almost as old as the bicycle itself. Bikes were first introduced to the country in the 1880s and during the 1920s and 1930s, the bicycle became a symbol of equality and freedom. People of all social classes began biking side by side on their way to work, to a bar, or just the countryside on their days off.
                         Strøget, the main shopping street in Copenhagen, became pedestrian only in 1962 and in the 70s, ‘Car Free Sundays’ were introduced in Copenhagen, and there were protests demanding that all of Copenhagen became car-free. 
                         </p>
                         <br>
                         <img src="img/drLuBro.jpg" class="center" alt="Dronning Louises Bro">
-                        <p>In our time, where the threat of global warming is ever-present, sustainable modes of transportation are at the forefront of solutions necessary to curb excess emissions.</p>
                         <p>Follow us on this journey, where you will discover what affects the cycling culture in Copenhagen, and which patterns we can observe among the danish cyclists. Do you think wind plays a role for how many people chooses to bicycle? Have introducing "super bike lanes" made more people bicycle? Find out below!<br>
                             <h3>Outline</h3> 
                             <ul>
@@ -169,14 +169,19 @@
                 <div class="tm-page-content-width tm-flex-col tm-gallery-content">
                     <div class="tm-content-box-inner tm-textbox">
                         <h3>Yearly patterns</h3>
-                        <p>Here, we had to be carefull when averaging over all locations, as not all of them are included every year, which then might cause in heavily biased results. For example, the interactive plot from Friday 00:00 until Saturday 04:00 indicated that some roads on average had a lot more activity on the bike lanes.</p>
-                        <p>In the gallery bellow, we can see two plots side by side for each of the locations. 
+                        <p>Now that we consider the yearly patterns, we cannot average across every road anymore, as this would be a biased comparison based on which roads are included in the different years. Therefore, we instead inspect each of the 13 roads over the 10 observed years. As we've seen that both seasonality and weekdays/weekends has an impact on the activity, the comparison should primarily be made between years where most of the 365 days where measured as well as evenly between all four seasons.</p>
+                        <p>In the gallery bellow, we can see two plots side by side for each of the locations.
                             <ul> 
-                                <li>On the left side, the plots show the years where measurements where recorded throughout the year (notice the "365 days" bar on the top).</li>
-                                <li>The years for which this is true are then compareable on the right side plots.</li>
+                                <li>On the left side, the plots show how many days during each year the sensor recorded countings - i.e. the closer to the '365 days' bar, the more comparable that year is. Moreover, the size of the colored blocks indicate the distribution between seasons, where these preferably should be equally large.</li>
+                                <li>The years with four equally large blocks and close to the '365 days' limit in the left plot, are compareable on the right side plots. On these right plots, we see the daily number of cyclists counted that year.</li>
                             </ul>
+                        Do you see an increasing trend for the compareable years? For most locations we do. However, there are a few examples which implies the opposite - for example take a look at "Fredensbro" in 2013. But this drop actually turned out to be a results of road work. All these justifications and an in-depth analysis of this plot can be found in our notebook! (OUR NOTEBOOK LIIIIINK!!!!). 
                         </p>
-                        <p>We can conclude that the data indicates an increasing number of cyclists on these locations. However, these observations are based only on a few streets and the specified years. It would have been be more meaninfull to average across all the roads, as the biases from road work and over/under-represented seasons would to a larger extent be averaged out. Although it would be tempting to assume that this implies that people in Copenhagen have chosen to use their bikes more, we need to keep in mind that the population of Copenhagen has also increased over the years.
+                        <p> So the data indicates an increasing number of cyclists on these locations.  However, these observations are based only on a few streets and the specified years. Ideally, we would have data from many more roads in order to average across these, and by that would road work and over/under-represented seasons to a larger extent be averaged out. 
+                            
+                        <p>
+                        So how many more bikes do we see on the streets? Well, if we take Tuborgvej as an example, we see that <b style="color: blue;">from 2007-2013, the number of cyclists have increased with more than 15%</b>!
+                        Although it would be tempting to assume that this reflects the exact increase of the number of people in Copenhagen which have chosen to use their bikes, we need to keep in mind that the population of Copenhagen has also increased over the years, which probably accounts for some portion. To give some impression, the population of Copenhagen has increased with ~2% from 2007-2013.
                         </p>
                         <!-- Add filtered gallery, 3:2 images -->
                         <br>
@@ -243,10 +248,12 @@
              <section class="parallax-window tm-section tm-section-home" id="sbl" data-parallax="scroll" data-image-src="img/sbl.jpg">
                 <div class="tm-page-content-width tm-padding-b">                
                     <div class="tm-textbox tm-white-bg">
-                        <h2 class="tm-green-text tm-section-title">Super Bike Lanes</h2>
-                        <p>For this we looked at <b>Hareskovvej</b>, as it's the only one from the streets that became a super bike lane during the years we have data for. The rest were delivered at a later time, most of them in 2017.</p>
-                        <p>In the figure on the bottom-right, we plot the "fair comparisons" based on equal number of days on the left side and the possibly biased (in both directions) on the right side.
-                            Every point is the average number of cyclists in the specified month. Each point on that same month (vertically) refers to the different years. The dots are colored blue if they are prior to April 2013 and red if they are after it.</p>
+                        <h2 class="tm-green-text tm-section-title">The Super Bike Lanes</h2>
+                        <p>
+                        We've just seen that there seem to be a general tendency over the years towards people in Copenhagen choosing the bicycle more often. From an environmental perspective this is great news. And even better if we could make even more people ride the bike. Therefore, this has also been an agenda for the danish government, which has started building "supercykelstier" (super bike lanes) all around Copenhagen. The purpose of these roads are to improve the bicycle conditions and thereby make more people choose the bike over less environmental-friendly alternatives. But do the super bike lanes seem to have an impact on the danes' choice of transportation? And if so - to what extent?
+                        </p>
+                        <p>For this we looked at <b>Hareskovvej</b>, as it's the only road in the data that became a super bike lane during the years we have data for. The rest were delivered at a later time, most of them in 2017.</p>
+                        <p>In the figure on the bottom-right, every point is the average number of cyclists in the specified month. Each point on that same month (vertically) refers to the different years. The dots are colored blue if they are <b style="color:#0056c7;">prior</b> to opening of the super bike lane (April 2013) and red if they are <b style="color: red;">after</b>. We've split the plot in two - to the left you see a "fair comparison" where we only compare points with equal number of days. And to the right, we've included all years, also including if some years had more measurements than others.</p>
                         <p> We can then observe that more bicyclists passed on Hareskovvej at every month and year after the opening of the super bike lane, as every red point is higher up than the blue ones. <b style="color:#0056c7;">This implies that the super bike lanes do have an impact on the number of people who choose to use their bicycle!</b></p>
                         
                     </div>    
@@ -260,9 +267,9 @@
                         <div class="tm-content-box-inner">
                             <h3>Influence of Super Bike Lanes</h3>
                             <p>A pessimistic prediction would be that we see an 23% increase in the number of bicyclists on Hareskovvej, after it was introduced as a super bike lane. Note that this "pessimistic" prediction is much higher than the yearly increase in Copenhagen's population since 2005 (≈2%). At the same time, it is also higher than the general increase of cyclists on the streets since 2005 (≈17%). 
-                                A more accuracte prediction would probably be to compute the increase of the average number of cyclists before and after April 2013 on Hareskovvej which is: <i>≈1.60968</i></p>
-                            <p>This shows that from the data, we can observe that 61% more people on average for the selected four months, ride on Hareskovvej after it's upgrade to "super". This fits very well with other analyses done on the specific location. Newer analyses with data up to 2018, show an increase of 68% on weekdays and 108% during the weekends. 
-                                Furthermore, it is also worth-mentioning that our work suggest that the government's goal of a 25% increase on the number of cyclists on this super bike lane has been reached!<br><b style="color:#0056c7;">This was said to save 230 tons of CO<sub>2</sub> and 10.1 million DKK, as gain in healthcare economics.</b></p>
+                                A more accuracte prediction would probably be to compute the increase of the average number of cyclists before and after April 2013 on Hareskovvej/p>
+                            <p>This revealed that 61% more people on average for the selected four months, ride on Hareskovvej after its upgrade to "super". This fits very well with other analyses done on the specific location. Newer analyses with data up to 2018 show an increase of 68% on weekdays and 108% during the weekends. 
+                                Furthermore, it is also worth mentioning that our work suggest that the government's goal of a 25% increase on the number of cyclists on this super bike lane has been reached!<br><b style="color:#0056c7;">This was said to save 230 tons of CO<sub>2</sub> and 10.1 million DKK, as gain in healthcare economics.</b></p>
                         </div>                        
                     </div>                    
                 </div>                
