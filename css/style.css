@@ -54,13 +54,20 @@ h3 {
 	margin-bottom: 2rem;
 }
 
+catchphrase {
+	text-align: justify;
+	color: #264d73;
+	padding-bottom: 50px;
+	text-transform: uppercase;
+}
+
 ul {
 	list-style-type: square;
 	padding: 20px;
   }
 
 ul li {
-	color:#00c77b;
+	color:#264d73;
 	font-size: normal;
 	font-stretch: expanded;
 	font-weight: bold;
@@ -70,10 +77,8 @@ ul li {
 }
 
 
-.vimeo-video  {
+.vid-video  {
 	position: relative;
-	padding-top: 80px;
-
 } 
   
 
@@ -84,7 +89,6 @@ ul li {
 }
 
 .tm-site-title-wrap {
-	padding-top: 80px;
 	padding-bottom: 100px;
 }
 
@@ -94,25 +98,25 @@ ul li {
 	text-decoration-color: #00c77b;
 	text-decoration-thickness: 10%;
 	display: inline-block;
-	font-size: 3rem; 
+	font-size: 4rem; 
 	padding: 30px 40px;
 }
 
 .tm-textbox {
 	max-width: 600px;
 	width: 100%;
-	padding: 50px;
+	padding: 10px;
 	overflow: auto;
 }
 
 .tm-textbox-wide {
 	max-width: 100%;
 	width: 100%;
-	padding: 50px;
-	overflow: auto;
+	padding-left: 32%;
+	overflow: visible;
 }
 
-.tm-textbox-full-height { min-height: 950px; }
+.tm-textbox-full-height { min-height: 850px; }
 
 .tm-white-bg {
 	background-color: rgb(255, 255, 255);
@@ -127,7 +131,7 @@ ul li {
 	font-size: 1.8rem;
 	font-weight: 300;
 	color: white;
-	background-color: #3690FD;
+	background-color: #264d73;
 	padding: 15px 30px;
 	cursor: pointer;
 	border: none;
@@ -317,18 +321,24 @@ ul li {
 }
 
 #map_837ddc8e266642d0a18b4751563b89e5 {
-	position: absolute;
+	position: inherit;
 	
-	width: 50.0%;
+	width: 47.0%;
 	height: 5.0%;
-	left: 42.0%;
-	top: 52.6%;
+	left: 52.0%;
+	top: 44.0%;
 }
 
 #map_3a0b7fad491c47f5ade377617ebc7614 {
 	position: absolute;
-	width: 60.0%;
+	width: 47.0%;
 	height: 5.0%;
-	left: 8.0%;
-	top: 65.0%;
+	left: 2%;
+	top: 51.0%;
+}
+
+iframe {
+	border-style: none;
+	width: 100%; 
+	height: 320px;
 }
