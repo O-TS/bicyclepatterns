@@ -59,11 +59,13 @@ h3 {
 	margin-bottom: 2rem;
 }
 
-catchphrase {
-	text-align: justify;
+.cphrase {
+	text-align: center;
+	font-size: x-large;
+	letter-spacing: 0.3rem;
 	color: #264d73;
-	padding-bottom: 50px;
-	text-transform: uppercase;
+	padding-top: 80px;
+	font-weight: lighter;
 }
 
 ul {
