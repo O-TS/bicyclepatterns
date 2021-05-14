@@ -162,7 +162,13 @@
                     <div class="tm-content-box-right tm-textbox">
                         <h3>Weekly patterns</h3>
                         <p>During the week, the scene changes. By exploring the data we came to an obvious, yet fun fact. As seen below, Danes seem to bicycle more on some days compared to others based on the 13 measured roads. During the week, the patterns are pretty similar, but on friday afternoons, things slightly change. From the change in the distribution (see circle in plot), it looks like people either leave work earlier, or they choose to stay for a beer and socialize at the company's Friday bar!</p>
-                        <br><img src="img/weekly.jpg" class="center" alt="Weekly plot" width="initial">
+                    </div>
+                    <div>
+                        <img src="img/weekly.jpg" class="center" alt="Weekly plot" width="initial" style="width:100%">
+                    </div>
+                    <div class="tm-conent-box-right tm-textbox">
+                        
+
                         <p>If we for a moment just focus on the nights hours of the week (the red bars in the figure), we can recognize an expected pattern where we see that there in general seem to be more activity on the nights of the weekend. This peaked our curiosity in order to see where people are typically headed during the night hours. </p>
                      
                         <!-- Folium Map Plot 2 -->
@@ -183,7 +189,7 @@
                         <br>
                     </div>
                     
-                    <img src="img/monthly.jpg" class="center" alt="Monthly plot">
+                    <img src="img/monthly.jpg" class="center" alt="Monthly plot" style="width:100%">
                 <!-- </div>
             </section> -->
                       
@@ -254,37 +260,50 @@
             </section>
 
             <!-- Influence of Weather -->
-            <section class="parallax-window tm-section tm-section-services" id="weather" data-parallax="scroll" data-image-src="img/bg-ws-wd.jpg">
+            <section class="parallax-window tm-section tm-section-services" id="weather" data-parallax="scroll" data-image-src="img/weather-bg.png">
                 <div class="tm-page-content-width">
                     <div class="tm-translucent-white-bg tm-content-box tm-content-box-right">
                         <div class="tm-content-box-inner">
                             <h2 class="tm-green-text tm-section-title">Impact of the weather</h2>
-                            <p>Noah's part :)</p>
-                            <p>Etiam sed diam hendrerit dolor posuere dignissim. Integer eget nunc consequat, posuere augue maximus, elementum metus. Suspendisse et hendrerit velit. Morbi consectetur nisi. And many more other interesting things.</p>
-                            </div>
+                            <p>Are Danes really vikings when it comes to their biking habits, or can a hard gale hold people back from cycling? In this section, we will explore the relationship between weather patterns and amount of cyclists. We will look into questions such as?<br>
+                                <ul>
+                                    <li>Does temperature play a part in the number of cyclists??</li>
+                                    <li>Do we stop bicycling when its raining?</li>
+                                    <li>Can wind really be a determining factor when you bicycle?</li>
+                                </ul>
+                            </p>
+                            <p>We will look into temperature, precipitation and wind patterns using data from the Danish Meterological Institute provided by DMI's open access <a href="https://confluence.govcloud.dk/display/FDAPI">API</a>. On the left you can see a subset of the data we have from 2005-2014. Temperature is very cyclical on a daily level, whereas precipitation is much more immediate and sudden. Wind speed and direction also change slowly over a daily basis.</p>
+                            <p>We worked with weather and bike data from 2009-2010 (inclusive), as the dataset was complete and reasonable to impute missing values on.</p>
+                        </div>
                         </div>                        
                     </div>                    
                 </div>                
             </section>
-            <!-- -->
-            <section class="parallax-window tm-section tm-section-home" id="tempat2" data-parallax="scroll" data-image-src="img/bg-w.jpg">
+             <!-- Influence of temperature and precipitation -->
+            <section class="parallax-window tm-section tm-section-home" id="tempat2" data-parallax="scroll" data-image-src="img/bg-temp-precip.png">
                 <div class="tm-page-content-width tm-padding-b">                
                     <div class="tm-textbox tm-white-bg">
-                        <h3>Weekly patterns</h3>
-                        <p>During the week, the scene changes. By exploring the data we came to an obvious, yet fun fact. As seen below, Danes seem to bicycle more on some days compared to others based on the 13 measured roads. During the week, the patterns are pretty similar, but on friday afternoons, things slightly change. From the change in the distribution (see circle in plot), it looks like people either leave work earlier, or they choose to stay for a beer and socialize at the company's Friday bar!</p>
-                        <br><img src="img/weekly.jpg" class="center" alt="Weekly plot" width="initial" style="width:100%">
-                        <p>If we for a moment just focus on the nights hours of the week (the red bars in the figure), we can recognize an expected pattern where we see that there in general seem to be more activity on the nights of the weekend. This peaked our curiosity in order to see where people are typically headed during the night hours. </p>
-                     
-                        <!-- Folium Map Plot 2 -->
-                        <iframe name="iframe2" id="iframe" src="http://www.nommax.com/bicyclepatterns/plots/312.html" frameborder="0" border="0" cellspacing="0">
-                        </iframe>
-                        <a href="http://www.nommax.com/bicyclepatterns/plots/312.html" target="_blank" class="tm-btn">View full size</a>
-                        <p></p>
-                        <p style="padding-top: 60px">In the above plot we see the number of bikers at the various locations from Friday midnight to the first 4 hours of Saturday. What's interesting here is how through the hours, the activity in the various spots changes, with Torvegade being the one with the most traffic throughout the day. But during the late-night / early-morning hours, Dr. Louises Bro seem to be the only location with some noteworthy commotion!</p>
+                        <h3>Getting steamy..</h3>
+                        <p>We started by looking into the average amount of cyclists at a fixed hour every day (8:00-9:00) to reduce the variance from whole data set and evenly binned the average number of cyclists depending on the temperature. It is interesting to note that both hot and cold weather seems to scare off Copenhageners! It could also be due to poor visibility during the dark winters and a preponderance for out-of-town-travels during the summer. But what vikings ineed!</p>
+                        <p>We also looked at the precipitation, where we took the whole dataset for the two years and binned manually, as the data wasn't normally distributed. A weird trend seems to show up, where we have a liking for torrential down-pour, but examining further it can be seen that the last intervals are heavy skewed by a lack of samples, which will most likely add a bias.</p>
                     </div>
+
                 </div>
             </section>
 
+            <!-- Influence of wind -->
+            <section class="parallax-window tm-section tm-section-services" id="temperature" data-parallax="scroll" data-image-src="img/bg-wind.png">
+                <div class="tm-page-content-width">
+                    <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
+                        <div class="tm-content-box-inner">
+                            <h3>It's getting hot..</h3>
+                            <p>In this section, we will look at the <b>influence of the weather</b> on the amount of people bicycling. More specifically, we will look at:<br>
+                        </div>
+                        </div>                        
+                    </div>                    
+                </div>                
+            </section>
+            
              <!-- Super bike lanes section-->
              <section class="parallax-window tm-section tm-section-home" id="sbl" data-parallax="scroll" data-image-src="img/sbl.jpg">
                 <div class="tm-page-content-width tm-padding-b">                
