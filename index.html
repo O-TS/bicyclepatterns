@@ -77,13 +77,13 @@
                         <p>The cycling culture in Denmark is almost as old as the bicycle itself. Bikes were first introduced to the country in the 1880s and during the 1920s and 1930s, the bicycle became a symbol of equality and freedom. People of all social classes began biking side by side on their way to work, to a bar, or just the countryside on their days off.
                         Strøget, the main shopping street in Copenhagen, became pedestrian only in 1962 and in the 70s, ‘Car Free Sundays’ were introduced in Copenhagen, and there were protests demanding that all of Copenhagen became car-free. 
                         </p>
-                        <p>Follow us on this journey, where you will discover what affects this cycling culture in Copenhagen and which patterns we can observe among the danish cyclists. Do you think wind plays a role for how many people chooses to bicycle? Has the introduction of "super bike lanes" made more people use their bicycles? Let's find out!<br>
+                        <p>Today, Denmark is riding in the lead when it comes to using the bikes as an alternative to the cars. That is why it is interesting to investigate these patterns and what affects them. And what better way to do it, than investigating the center of it all - in Copenhagen. So follow us on this journey, where you will discover what affects this cycling culture in Copenhagen and which patterns we can observe among the danish cyclists. Do you think wind plays a role for how many people chooses to bicycle? Has the introduction of "super bike lanes" made more people use their bicycles? Find out below!<br>
                         <h3>Outline</h3> 
                             <ul>
-                                <li> What factors affect the use of bicycles in CPH?</li>
-                                <li> When do people mostly ride their bikes?</li>
-                                <li> How does the weather influence bicycling patterns?</li>
-                                <li> The introduction of Super Bike Lanes and whether they managed to improve the infrastructure.</li>
+                                <li> No data, no detail</li>
+                                <li> When do people cycle the most?</li>
+                                <li> Impact of the weather</li>
+                                <li> The Super Bike Lanes</li>
                             </ul>
                         </p>
                         <a href="#" class="tm-btn">View Notebook</a>
@@ -96,9 +96,9 @@
                 <div class="tm-page-content-width">
                     <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
                         <div class="tm-content-box-inner">
-                            <h2 class="tm-section-title tm-green-text">Harnessing the data</h2>
-                            <p> In order to make any observations, we need data; and our main dataset is bicycle data from various measuring points throughout the Copenhagen Metropolitan Area, between the years 2005 – 2014. On each of these measuring points, sensors are counting how many bikes are passing each hour and their direction - and this is what we will explore!</p>
-                            <p>Having done the initial exploration and cleaning on the complete data set, we ended up with more than 5000 thousand days of data with hourly countings. To the left, you can see where these countings took place and in which years these locations were measured. The years which are not measured for some road are indicated by a missing blue dot. Note that every road is not included in every year! This observation is important to keep in mind when analysing the data. For example, it would not be fair to compare how many people bicycled in 2005 and 2006 by comparing the total count each year, since 2006 measured eight additional locations. </p>
+                            <h2 class="tm-section-title tm-green-text">No data, no detail</h2>
+                            <p> In order to conclude or observe anything, we need data. Therefore, this work is based on bicycle data from various measuring points throughout the Copenhagen Metropolitan Area, between the years 2005 – 2014. On each of these measuring points, sensors are counting how many bikes are passing each hour and their direction - and this is what we will explore!</p>
+                            <p>Having done the initial exploration and cleaning on the complete data set, we ended up with more than five thousand days of data with hourly countings. To the left, you can see where these countings took place and in which years these locations were measured. The years which are not measured for some road are indicated by a missing blue dot. Note that every road is not included in every year! This observation is important to keep in mind when analysing the data. For example, it would not be fair to compare how many people bicycled in 2005 and 2006 by comparing the total count each year, since 2006 measured eight additional locations. </p>
                             <h3>Fun fact about the data</h3> 
                             <div class="media tm-media">
                                 <i class="fa fa-2x fa-bar-chart tm-media-icon"></i>    
@@ -118,7 +118,7 @@
                         <h2 class="tm-green-text tm-section-title">When do people cycle the most?</h2>
                         <p>In this first part, we'll begin by looking into the <b>temporal patterns</b> of the data in order to observe similarities and differences in the data, as well as investigate some of our initial expectations, such as:<br>
                             <ul>
-                                <li>Weekdays busiest hours, will be 8am and 16am.</li>
+                                <li>Weekdays' busiest hours, will be 8am and 16am.</li>
                                 <li>Weekend nights will be busier than usual.</li>
                                 <li>Traffic will be towards the city in the morning.</li>
                                 <li>People ride less during the winter.</li>
@@ -128,7 +128,7 @@
                     </div>
                     <div class="tm-content-box-right tm-textbox">
                         <h3>Hourly patterns</h3>
-                        <p>We began by investigating the hourly patterns. This quickly revealed that on average for all locations, the two most traffic-heavy hours are from 08-09 and from 16-17. In the figure below, we see the average number of bicycles per hour of the day. There are three viewing options, where you by toggling 'Total' can see this pattern.</p>
+                        <p>We begin by investigating the hourly patterns. This quickly reveal that on average for all locations, the two most traffic-heavy hours are from 08-09 and from 16-17. In the figure below, we see the average number of bicycles per hour of the day. There are three viewing options, where you by only toggling 'Total' can see this pattern.</p>
                     </div>
                         <!-- Bokeh -->
                         <div class="tm-textbox-wide">
@@ -137,16 +137,15 @@
                         <!-- End of Bokeh -->
 
                     <div class="tm-content-box-right tm-textbox">
-                        <p>This was also what you would expect as this fits well with the general patterns in the danish society, where lots of people go to and from work, school institutions, etc. during these hours.</p>
+                        <p>This was also what you would expect as this fits well with the general patterns in the danish society, where lots of people go to and from work, school institutions, etc.</p>
                         
                         <br>
-                        <p>But where is everyone heading to? By selecting only one of the other two categories, you can inspect the cyclists going towards the city center or those going away from it. Here things become more interesting, as we see similar patterns to the total distribution, which <b style="color: #0056c7;">was not what we expected!</b> For example, when just looking at a single direction for Dronnings Louises Bro, we see a quite salient pattern when inspecting a single direction. This could imply that the <b style="color: #0056c7;"> direction</b> (of whether people primarily go towards or away from the city), <b style="color: #0056c7;">is very dependent on the specific location</b>.
+                        <p>But where is everyone heading to? By selecting only one of the other two categories, you can inspect the cyclists going towards the city center or those going away from it. Here things become more interesting, as we see similar patterns to the total distribution, which <b style="color: #0056c7;">was not what we expected!</b> For example, when just looking at the traffic away from the city at Dronnings Louises Bro, we see that almost no one bicycles out of the city at 08:00-09:00 compared to 16:00-17:00. This could imply that the <b style="color: #0056c7;"> direction</b> (of whether people primarily go towards or away from the city), <b style="color: #0056c7;">is very dependent on the specific location</b>.
                         </p>
 
-                        <p>By moving the slider on the interactive map to the right, we can view the direction of traffic on the bike lanes throughout the day. The color of the bubbles in each location shows whether the dominating <b>direction</b> is <b style="color: blue;">towards</b> or <b style="color: red;">away</b> from the center of Copenhagen.</p>
-                        <p> And the size tells "how dominating" either direction is - i.e. the larger the buble, the more the traffic is headed in one direction over the other, whereas small bubles indicate similar amount of traffic in each direction. Note that you can click on any location to show the selected bubble's street name.</p>
+                        <p>By moving the slider on the interactive map below, we can view the direction of traffic on the bike lanes throughout the day. The color of the bubbles in each location shows whether the dominating <b>direction</b> is <b style="color: blue;">towards</b> or <b style="color: red;">away</b> from the center of Copenhagen. And the size tells "how dominating" either direction is - i.e. the larger the buble, the more the traffic is headed in one direction over the other, whereas small bubles indicate similar amount of traffic in each direction. Note that you can click on any location to show the selected bubble's street name.</p>
                         <p>
-                        On the interactive map bellow, it is visible that our new hypothesis from inspecting the plot of Dr. Louises Bro was true. Although the overall traffic around Copenhagen is not dominated by traffic either towards or away from the center - the traffic at each location is typically dominated in each directions at different locations during rush hour around Copenhagen. Moreover, note that if one direction dominated in the morning, typically, the other direction dominated in the afternoon as the bubbles' colors switches!
+                        On the interactive map below, it is visible that our new hypothesis from inspecting the plot of Dr. Louises Bro was true. Although the overall traffic around Copenhagen is not dominated by traffic either towards or away from the center - the traffic at each location is typically dominated in either direction at different locations during rush hour around Copenhagen! Moreover, note that if one direction dominated in the morning, typically, the other direction dominated in the afternoon as the bubbles' colors switched!
                         </p>
                         <iframe name="iframe1" id="iframe" src="http://www.nommax.com/bicyclepatterns/plots/311.html" frameborder="0" cellspacing="0">
                         </iframe>
@@ -159,7 +158,7 @@
                 <div class="tm-page-content-width tm-padding-b">                
                     <div class="tm-textbox tm-white-bg">
                         <h3>Weekly patterns</h3>
-                        <p>During the week though, the scene changes. By exploring the data we came to an obvious, yet fun fact. As seen bellow, Danes seem to bicycle more on some days compared to others based on the 13 measured roads. As expected during the week the patterns are pretty similar, but on Friday afternoons, things slightly change. From the change in the distribution (see circle in plot), it looks like people either leave work earlier, or they choose to stay for a beer and socialize at the company's Friday bar!</p>
+                        <p>During the week, the scene changes. By exploring the data we came to an obvious, yet fun fact. As seen below, Danes seem to bicycle more on some days compared to others based on the 13 measured roads. During the week, the patterns are pretty similar, but on friday afternoons, things slightly change. From the change in the distribution (see circle in plot), it looks like people either leave work earlier, or they choose to stay for a beer and socialize at the company's Friday bar!</p>
                         <br><img src="img/weekly.jpg" class="center" alt="Weekly plot" width="initial">
                         <p>If we for a moment just focus on the nights hours of the week (the red bars in the figure), we can recognize an expected pattern where we see that there in general seem to be more activity on the nights of the weekend. This peaked our curiosity in order to see where people are typically headed during the night hours. </p>
                      
@@ -168,7 +167,7 @@
                         </iframe>
                         <a href="http://www.nommax.com/bicyclepatterns/plots/312.html" target="_blank" class="tm-btn">View full size</a>
                         <p></p>
-                        <p style="padding-top: 60px">In the above plot we see the number of bikers at the various locations from Friday midnight to the first 4 hours of Saturday. What's interesting here is how through the hours, the activity in the various spots changes, with Torvegade being the one with the most traffic throughout the day. But during the late-night / early-morning hours, Dr. Louises Bro seem to be the only location with some noteworthy commotion.</p>
+                        <p style="padding-top: 60px">In the above plot we see the number of bikers at the various locations from Friday midnight to the first 4 hours of Saturday. What's interesting here is how through the hours, the activity in the various spots changes, with Torvegade being the one with the most traffic throughout the day. But during the late-night / early-morning hours, Dr. Louises Bro seem to be the only location with some noteworthy commotion!</p>
                     </div>
                 </div>
             </section>
@@ -177,7 +176,7 @@
                 <div class="tm-page-content-width">   
                     <div class="tm-textbox tm-content-box-right">
                         <h3>Monthly patterns</h3>
-                        <p>Now, let's widen the time-perspective and look at the monthly and seasonal patterns. We want to address the question of whether the month or the different seasons, have an impact on how many people choose to use their bikes. In the next plot, it appears that the weeks in December in general have more passing cyclists than other winter months, except from week 51. But this also makes great sense since it is Christmas week, where it is expected that a lot of people travel for the hollidays, while schools, universities and several companies are closed. This might also explain why we also see a similar decrease in July (weeks 27-29) as these are common weeks for travelling abroad for the summer holidays (in the pre-Covid19 era). To conclude, it seems reasonable to hypothesise that there could be a connection to the weather conditions, which we will investigate in the next section. But before we do that, we want to see how patterns develop over the years.</p>
+                        <p>Now, let's widen the time-perspective and look at the monthly and seasonal patterns. We want to address the question of whether the month or the different seasons have an impact on how many people choose to use their bikes. In the next plot, it appears that the weeks in December in general have more passing cyclists than other winter months, except from week 51. But this also makes great sense since it is Christmas week, where it is expected that a lot of people travel for the hollidays, while schools, universities and several companies are closed. This might also explain why we also see a similar decrease in July (weeks 27-29) as these are common weeks for travelling abroad for the summer holidays (in the pre-Covid19 era). To conclude, it seems reasonable to hypothesise that there could be a connection to the weather conditions, which we will investigate in the next section. But before we do that, we want to see how patterns develop over the years.</p>
                         <br>
                     </div>
                     
@@ -191,18 +190,18 @@
                     <div class="tm-content-box-inner tm-textbox">
                         <h3>Yearly patterns</h3>
                         <p>Now that we consider the yearly patterns, we cannot average across every road anymore, as this would be a biased comparison based on which roads are included in the different years. Therefore, we instead inspect each of the 13 roads over the 10 observed years. As we've seen that both seasonality and weekdays/weekends has an impact on the activity, the comparison should primarily be made between years where most of the 365 days where measured as well as evenly between all four seasons.</p>
-                        <p>In the gallery bellow, we can see two plots side by side for each of the locations.
+                        <p>In the gallery below, we can see two plots side by side for each of the locations.
                             <ul> 
                                 <li>On the left side, the plots show how many days during each year the sensor recorded countings - i.e. the closer to the '365 days' bar, the more comparable that year is. Moreover, the size of the colored blocks indicate the distribution between seasons, where these preferably should be equally large.</li>
                                 <li>The years with four equally large blocks and close to the '365 days' limit in the left plot, are compareable on the right side plots. On these right plots, we see the daily number of cyclists counted that year.</li>
                             </ul>
                         </p>
-                        <p> Do you see an increasing trend for the compareable years? For most locations we do. However, there are a few examples which implies the opposite - for example take a look at "Fredensbro" in 2013. But this drop actually turned out to be a results of road work. All these justifications and an in-depth analysis of this plot can be found in our <a href="#">notebook</a>!</p>
-                        <p>We see that the data indicates an increasing number of cyclists on these locations.  However, these observations are based only on a few streets and the specified years. Ideally, we would have data from many more roads in order to average across these, and by that would road work and over/under-represented seasons to a larger extent be averaged out. 
+                        <p> Do you see an increasing trend for the compareable years? For most locations we do. However, there are a few examples which implies the opposite - for example take a look at "Fredensbro" in 2013. But this drop actually turned out to be a results of road work. More of these explanations and in-depth analysis of this plot can be found in our <a href="#">notebook</a>!</p>
+                        <p>To conclude, we see that the data indicates an increasing number of cyclists on these locations.  However, these observations are only based on a few streets and the specified years. Ideally, we would have data from many more roads in order to average across these, and by that would road work and over/under-represented seasons to a larger extent be averaged out. 
                             
                         <p>
                         So how many more bikes do we see on the streets? Well, if we take Tuborgvej as an example, we see that <b style="color: #264d73;">from 2007-2013</b>, the number of cyclists has <b style="color: #264d73;">increased by more than 15%</b>!
-                        Although it would be tempting to assume that this reflects the exact increase of the number of people in Copenhagen who have chosen to use their bikes, we need to keep in mind that the population of Copenhagen has also increased over the years, which probably accounts for some portion to that increasement. To give some impression, the population of Copenhagen has increased by ~2% from 2007-2013.
+                        Even though it would be tempting to assume that this reflects the exact increase of the bicyclists in Copenhagen, we need to keep in mind that the population of Copenhagen has also increased over the years, which probably accounts for some portion to that increasement. To give some impression, the population of Copenhagen has increased by ~2% from 2007-2013.
                         </p>
                         <!-- Add filtered gallery, 3:2 images -->
                         <br>
@@ -256,7 +255,7 @@
                 <div class="tm-page-content-width">
                     <div class="tm-content-box tm-content-box-right">
                         <div class="tm-content-box-inner">
-                            <h2 class="tm-green-text tm-section-title">Influence of Weather</h2>
+                            <h2 class="tm-green-text tm-section-title">Impact of the weather</h2>
                             <p>Noah's part :)</p>
                             <p>Etiam sed diam hendrerit dolor posuere dignissim. Integer eget nunc consequat, posuere augue maximus, elementum metus. Suspendisse et hendrerit velit. Morbi consectetur nisi. And many more other interesting things.</p>
                             </div>
@@ -274,7 +273,7 @@
                         We've just seen that there seem to be a general tendency over the years towards people in Copenhagen choosing the bicycle more often. From an environmental perspective this is great news. And even better if we could make even more people ride the bike. Therefore, this has also been an agenda for the danish government, which has started building "supercykelstier" (super bike lanes) all around Copenhagen. The purpose of these roads are to improve the bicycle conditions and thereby make more people choose the bike over less environmental-friendly alternatives. But do the super bike lanes seem to have an impact on the danes' choice of transportation? And if so - to what extent?
                         </p>
                         <p>For this we looked at <b>Hareskovvej</b>, as it's the only road in the data that became a super bike lane during the years we have data for. The rest were delivered at a later time, most of them in 2017.</p>
-                        <p>In the figure on the bottom-right, every point is the average number of cyclists in the specified month. Each point on that same month (vertically) refers to the different years. The dots are colored blue if they are <b style="color:#0056c7;">prior</b> to opening of the super bike lane (April 2013) and red if they are <b style="color: red;">after</b>. We've split the plot in two - to the left you see a "fair comparison" where we only compare points with equal number of days. And to the right, we've included all years, also including if some years had more measurements than others.</p>
+                        <p>In the figure on the bottom-right, every point is the average number of cyclists in the specified month. Each point on that same month (vertically) refers to the different years. The dots are colored blue if they are <b style="color:#0056c7;">prior</b> to opening of the super bike lane (April 2013) and red if they are <b style="color: red;">after</b>. We've split the plot in two. To the left you see a "fair comparison" where we only compare points with equal number of days. And to the right, we've included all years, also including if some years had more measurements than others.</p>
                         <p> We can then observe that more bicyclists passed on Hareskovvej at every month and year after the opening of the super bike lane, as every red point is higher up than the blue ones. <b style="color:#264d73;">This implies that the super bike lanes do have an impact on the number of people who choose to use their bicycle!</b></p>
                         
                     </div>    
@@ -287,11 +286,10 @@
                     <div class="tm-textbox tm-white-bg tm-content-box-right">
                         <div class="tm-content-box-inner"><br>
                             <br>
-                            <h3>Influence of Super Bike Lanes</h3>
-                            <p>A pessimistic prediction would be that we see an 23% increase in the number of bicyclists on Hareskovvej, after it was introduced as a super bike lane. Note that this "pessimistic" prediction is much higher than the yearly increase in Copenhagen's population since 2005 (≈2%). At the same time, it is also higher than the general increase of cyclists on the streets since 2005 (≈17%). 
-                                A more accuracte prediction would probably be to compute the increase of the average number of cyclists before and after April 2013 on Hareskovvej</p>
-                            <p>This revealed that 61% more people on average for the selected four months, ride on Hareskovvej after its upgrade to "super". This fits very well with other analyses done on the specific location. Newer analyses with data up to 2018 show an increase of 68% on weekdays and 108% during the weekends. 
-                                Furthermore, it is also worth mentioning that our work suggest that the government's goal of a 25% increase on the number of cyclists on this super bike lane has been reached!<br><b style="color:#264d73;">This was said to save 230 tons of CO<sub>2</sub> and 10.1 million DKK, as gain in healthcare economics.</b></p>
+                            <h3>But how much?</h3>
+                            <p>A pessimistic prediction would be that we see an 23% increase in the number of bicyclists on Hareskovvej, after it was introduced as a super bike lane. Note that this "pessimistic" prediction is much higher than the yearly increase in Copenhagen's population since 2005 (≈2%). At the same time, it is also higher than the general increase of cyclists on the streets since 2005 (≈17%).</p> 
+                                <p>
+                                A more accuracte prediction would probably be to compute the increase of the average number of cyclists before and after April 2013 on Hareskovvej In relation to this, it is worth mentioning that our work suggest that the government's goal of a 25% increase on the number of cyclists on this super bike lane has been reached! <b style="color:#264d73;">This was said to save 230 tons of CO<sub>2</sub> and 10.1 million DKK, as gain in healthcare economics.</b></p>
                         </div>                        
                     </div>                    
                 </div>                
