@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="bicycle, patterns, Copenhagen, social data, analysis, visualization, 02806, DTU, DTU Compute, Social dataanalyse og visualisering, Social data analysis and visualization, Spring 2021">
 
     <title>Bicycle Patterns | Copenhagen</title>
 
@@ -283,10 +284,10 @@
                 <div class="tm-page-content-width tm-padding-b">                
                     <div class="tm-textbox tm-white-bg">
                         <h3>Temperature and rain</h3>
-                        <p>We started by looking into the average amount of cyclists at a fixed hour every day (8:00-9:00) to reduce the variance from whole data set and evenly binned the average number of cyclists depending on the temperature. It is interesting to note that both hot and cold weather seems to scare off Copenhageners! It could also be due to poor visibility during the dark winters and a preponderance for out-of-town-travels during the summer. But what vikings ineed!</p>
+                        <p>We started by looking into the average amount of cyclists at a fixed hour every day (8:00-9:00) to reduce the variance from whole data set and evenly binned the average number of cyclists depending on the temperature. It is interesting to note that both hot and cold weather seems to scare off Copenhageners! It could also be due to poor visibility during the dark winters and a preponderance for out-of-town-travels during the summer. But what vikings indeed!</p>
                         <p>We also looked at the precipitation, where we took the whole dataset for the two years and binned manually, as the data wasn't normally distributed. A weird trend seems to show up, where we have a liking for torrential down-pour, but examining further it can be seen that the last intervals are heavy skewed by a lack of samples, which will most likely add a bias.</p>
+                        <p>These visualizations indicate that temperature has an impact on how many people use their bikes. When we trainend an Artificial Neural Network to predict the amount of bicyclists, which can bee seen in the <a href="https://deepnote.com/@noah-sturis/Social-Data-Project-6Eu0h4A2QmSuXRzgKXHhkw#" target="_blank">notebook</a>, we saw that giving the model access to temperature actually helped it make better predictions!</p>
                     </div>
-
                 </div>
             </section>
 
@@ -299,8 +300,7 @@
                             <p>And finally, we will look into the man, the myth, the legend – Jakob Haugaard</p>
                             <p>He is a famous Danish comedian, who at a national election 25+ years ago promised, among other things, 'medvind på cykelstierne' or 'tailwind on the bike-lanes' as an election promise – and got elected! Even though that is a bit of a tall campaign order to fill (and spoiler alert: he didn't succeed), did he have a point?</p>
                             <p>We looked at a single road – Jagtvej – and looked at one of its directions. When faced with tailwind on Jagtvej more people bicycled on average – and the opposite was true as well! If people tend base their bycicle plans on windsurfer maps, we can't tell you, but it might be that Copenhageners are very intuitive cyclists and choose different routes depending on the weather they encounter?</p>
-                        </div>
-                        </div>                        
+                        </div>                      
                     </div>                    
                 </div>                
             </section>
@@ -315,8 +315,7 @@
                         </p>
                         <p>For this we looked at <b>Hareskovvej</b>, as it's the only road in the data that became a super bike lane during the years we have data for. The rest were delivered at a later time, most of them in 2017.</p>
                         <p>In the figure on the bottom-right, every point is the average number of cyclists in the specified month. Each point on that same month (vertically) refers to the different years. The dots are colored blue if they are <b style="color:#0056c7;">prior</b> to opening of the super bike lane (April 2013) and red if they are <b style="color: red;">after</b>. We've split the plot in two. To the left you see a "fair comparison" where we only compare points with equal number of days. And to the right, we've included all years, also including if some years had more measurements than others.</p>
-                        <p> We can then observe that more bicyclists passed on Hareskovvej at every month and year after the opening of the super bike lane, as every red point is higher up than the blue ones. <b style="color:#264d73;">This implies that the super bike lanes do have an impact on the number of people who choose to use their bicycle!</b></p>
-                        
+                        <p> We can then observe that more bicyclists passed on Hareskovvej at every month and year after the opening of the super bike lane, as every red point is higher up than the blue ones. <b style="color:#264d73;">This implies that the super bike lanes do have an impact on the number of people who choose to use their bicycle!</b></p>   
                     </div>    
                 </div>       
             </section>
@@ -355,7 +354,7 @@
                         <p>If you are interested in this project, or in case you found something that needs our attention, you are more than welcome to contact us, using the following form.</p>
                         
                         <!-- contact form -->
-                        <form action="index.html" method="post" class="tm-contact-form">
+                        <form action="cform.php" method="post" class="tm-contact-form">
                             <div class="form-group">
                                 <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
                             </div>
